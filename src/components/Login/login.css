@@ -1,0 +1,18 @@
+.login{
+    width: 300px;
+    height: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 8px;
+    border: 1px solid #dadce0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.loginText{
+    font-size: 28px;
+}
