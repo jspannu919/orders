@@ -141,7 +141,7 @@ const Orders = ({ data, addOrder, deleteOrder }) => {
                 <a onClick={addOrderHandler}>
                   Add
                 </a>
-                <a href="!#" onClick={hideNewOrderRow}>
+                <a onClick={hideNewOrderRow}>
                   Cancel
                 </a>
               </Space>
