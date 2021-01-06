@@ -7,6 +7,9 @@ const Login = (props) => {
         if(response.profileObj){
             props.loginActions.login(response.profileObj);
         }
+        else{
+            console.log(response);
+        }
     }
 
     return ( 
