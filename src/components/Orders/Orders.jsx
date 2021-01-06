@@ -138,7 +138,7 @@ const Orders = ({ data, addOrder, deleteOrder }) => {
           render={(order) =>
             order.key === "4566" ? (
               <Space size="middle">
-                <a href="!#" onClick={addOrderHandler}>
+                <a onClick={addOrderHandler}>
                   Add
                 </a>
                 <a href="!#" onClick={hideNewOrderRow}>
@@ -147,10 +147,10 @@ const Orders = ({ data, addOrder, deleteOrder }) => {
               </Space>
             ) : (
               <Space size="middle">
-                <a href="!#" onClick={() => editOrder(order.key)}>
+                <a onClick={() => editOrder(order.key)}>
                   Edit
                 </a>
-                <a href="!#" onClick={() => deleteOrder(order.key)}>
+                <a onClick={() => deleteOrder(order.key)}>
                   Delete
                 </a>
               </Space>
