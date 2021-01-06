@@ -1,5 +1,6 @@
 const homeActionTypes = {
-    deleteItem: 'DELETE_ITEM'
+    deleteOrder: 'DELETE_ORDER',
+    addOrder: 'ADD_ORDER'
 };
 
 export default homeActionTypes;

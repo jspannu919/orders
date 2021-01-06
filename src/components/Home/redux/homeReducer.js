@@ -1,14 +1,22 @@
 import homeActionTypes from './homeActionTypes';
+import data from '../../../data/data.json';
 
 const initialState = {
-    orders: []
+    orders: localStorage.getItem('ordersData') ? JSON.parse(localStorage.getItem('ordersData')) : data
 }
 
 const homeReducer = (state = JSON.parse(JSON.stringify(initialState)), action) => {
     switch(action.type){
-        case homeActionTypes.deleteItem:
+        case homeActionTypes.deleteOrder:
             return {
-                ...state
+                orders: state.orders.filter((order) => order.key !== action.orderId)
+            }
+        case homeActionTypes.addOrder:
+            return {
+                orders: [
+                    action.order,
+                    ...state.orders
+                ]
             }
         default:
             return state;

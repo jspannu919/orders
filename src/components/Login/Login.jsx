@@ -2,6 +2,7 @@ import {GoogleLogin} from 'react-google-login';
 import './login.css';
 
 const Login = (props) => {
+    //if login is successful, update userObject in redux store
     function responseGoogle(response){
         if(response.profileObj){
             props.loginActions.login(response.profileObj);
@@ -16,9 +17,7 @@ const Login = (props) => {
                 buttonText="Login"
                 clientId={process.env.REACT_APP_CLIENT_ID}
                 onSuccess={responseGoogle}
-                onFailure={responseGoogle}
                 cookiePolicy="single_host_origin"
-                isSignedIn={true}
             />
         </div>
      );

@@ -1,9 +1,13 @@
 import homeActionTypes from './homeActionTypes';
 
 const homeActions={
-    deleteItem: (itemId) => ({
-        type: homeActionTypes.deleteItem,
-        itemId
+    deleteOrder: (orderId) => ({
+        type: homeActionTypes.deleteOrder,
+        orderId
+    }),
+    addOrder: (order) => ({
+        type: homeActionTypes.addOrder,
+        order
     })
 }
 

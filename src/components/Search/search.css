@@ -1,0 +1,22 @@
+.search{
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.searchInputGroup{
+    width: 350px;
+}
+
+.searchFieldSelector{
+    width: 150px;
+}
+
+.searchField{
+    width: 200px;
+}
+
+.searchLabel{
+    margin-right: 10px;
+}
