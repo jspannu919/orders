@@ -15,7 +15,7 @@ const Home = (props) => {
       <Header />
       <Tabs defaultActiveKey="1" centered>
         <TabPane tab="Orders" key="1">
-          <Suspense fallback={Loading}>
+          <Suspense fallback={<Loading/>}>
             <Orders
               data={props.data.orders}
               addOrder={props.homeActions.addOrder}
@@ -24,7 +24,7 @@ const Home = (props) => {
           </Suspense>
         </TabPane>
         <TabPane tab="Analytics" key="2">
-          <Suspense fallback={Loading}>
+          <Suspense fallback={<Loading/>}>
             <Analytics data={props.data.orders} />
           </Suspense>
         </TabPane>
