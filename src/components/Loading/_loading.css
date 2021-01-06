@@ -1,0 +1,11 @@
+.loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  marginLeft: -13px;
+  marginTop: -10px;
+}
+
+.loadingIcon {
+  fontSize: 24;
+}
