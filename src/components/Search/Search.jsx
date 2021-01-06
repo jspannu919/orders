@@ -5,7 +5,7 @@ import './search.css';
 
 const Search = ({columns, onSearchHandler}) => {
 
-    const [searchColumn, setSearchColumn] = useState('Customer Name');
+    const [searchColumn, setSearchColumn] = useState('customer_name');
 
     return ( 
         <div className="search">

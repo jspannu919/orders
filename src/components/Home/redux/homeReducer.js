@@ -1,3 +1,4 @@
+
 import homeActionTypes from './homeActionTypes';
 import data from '../../../data/data.json';
 
