@@ -4,11 +4,9 @@ import './login.css';
 const Login = (props) => {
     //if login is successful, update userObject in redux store
     function responseGoogle(response){
+        console.log(response);
         if(response.profileObj){
             props.loginActions.login(response.profileObj);
-        }
-        else{
-            console.log(response);
         }
     }
 
